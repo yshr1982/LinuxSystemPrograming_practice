@@ -34,7 +34,7 @@ void main(void)
     fd = open("/dev/spidev0.0", O_RDWR);
     // SPIモードセット
 	if( ioctl(fd, SPI_IOC_WR_MODE, &mode) < 0 ) {
-		throw SPIException(string( "SPI_IOC_WR_MODE failed"));
+		printf( "SPI_IOC_WR_MODE failed");
 	}
     
     ioctl(fd, SPI_IOC_MESSAGE(1), &data);
