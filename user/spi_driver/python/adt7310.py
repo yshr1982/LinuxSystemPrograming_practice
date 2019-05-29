@@ -1,15 +1,15 @@
 import spidev
 import time
  
-```
+'''
 ADT7310 python driver
 
 manual
 https://www.analog.com/media/en/technical-documentation/data-sheets/ADT7310.pdf
 https://www.analog.com/media/en/technical-documentation/application-notes/AN_892.pdf
 https://www.analog.com/media/en/technical-documentation/user-guides/UG-047.pdf
+'''
 
-```
 
 spi = spidev.SpiDev()
 spi.open(0,0)
